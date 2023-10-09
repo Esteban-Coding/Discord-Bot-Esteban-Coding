@@ -77,7 +77,7 @@ module.exports = {
         .setLabel("X")
         .setEmoji("<:sm_x:1160803604567949353>")
         .setStyle(ButtonStyle.Link)
-        .setURL("https://www.threads.net/esteban.coding")
+        .setURL("https://www.twitter.com/EstebanCoding")
     );
 
     interaction.reply({
