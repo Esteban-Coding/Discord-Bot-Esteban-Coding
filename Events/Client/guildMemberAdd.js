@@ -12,7 +12,7 @@ module.exports = {
     registerFont("Resources\\Milky-Honey.ttf", { family: "Milky Honey" });
 
     const background = await Canvas.loadImage(
-      "https://cdn.discordapp.com/attachments/1061773400336519179/1150912557188653187/welcome.jpg"
+      "https://cdn.discordapp.com/attachments/1061773400336519179/1160802568902037534/Discord_Welcome_Banner.png"
     );
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
     ctx.textAlign = "center";
