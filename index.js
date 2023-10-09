@@ -29,7 +29,10 @@ require(`./Handlers/antiCrash`)(client);
 
 client.on("ready", () => {});
 
-client.on("guildMemberAdd", () => {});
+const { guildMemberAdd } = require("./Events/Client/guildMemberAdd.js");
+client.on("guildMemberAdd", async (client) => {
+  guildMemberAdd(client);
+});
 
 let voiceManager = new Collection();
 const { voiceStateUpdate } = require("./Events/Client/voiceStateUpdate.js");
