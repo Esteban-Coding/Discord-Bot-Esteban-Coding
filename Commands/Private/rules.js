@@ -74,6 +74,11 @@ module.exports = {
         .setStyle(ButtonStyle.Link)
         .setURL("https://www.twitch.tv/estebancoding"),
       new ButtonBuilder()
+        .setLabel("X")
+        .setEmoji("<:sm_x:1160803604567949353>")
+        .setStyle(ButtonStyle.Link)
+        .setURL("https://www.threads.net/esteban.coding"),
+      new ButtonBuilder()
         .setLabel("THREADS")
         .setEmoji("<:sm_threads:1150888064000983172>")
         .setStyle(ButtonStyle.Link)
