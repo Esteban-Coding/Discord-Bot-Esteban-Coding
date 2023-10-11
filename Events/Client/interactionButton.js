@@ -75,26 +75,26 @@ async function interactionButton(interaction, client) {
     });
   }
   //CLOSE TICKETS - @OWNER @MODERADORES
-  if (
-    interaction.member.roles.cache.has("1099895227105427618") ||
-    interaction.member.permissions.has(PermissionFlagsBits.Administrator)
-  ) {
-    if (interaction.customId === "closeTicket") {
+  if (interaction.customId === "closeTicket") {
+    if (
+      interaction.member.roles.cache.has("1099895227105427618") ||
+      interaction.member.permissions.has(PermissionFlagsBits.Administrator)
+    ) {
       interaction.channel.delete();
+    } else {
+      interaction.reply({
+        content: `🔒 SOLO UN <@&1099895227105427618> PUEDE REALIZAR ESTA ACCIÓN.`,
+        ephemeral: true,
+      });
     }
-  } else {
-    interaction.reply({
-      content: `🔒 SOLO UN <@&1099895227105427618> PUEDE REALIZAR ESTA ACCIÓN.`,
-      ephemeral: true,
-    });
   }
 
-  //UNMUTE/UNBAN - @MODERADORES
-  if (
-    interaction.member.roles.cache.has("1099895227105427618") ||
-    interaction.member.permissions.has(PermissionFlagsBits.Administrator)
-  ) {
-    if (interaction.customId.charAt(0) === "m") {
+  //UNMUTE - @MODERADORES
+  if (interaction.customId.charAt(0) === "m") {
+    if (
+      interaction.member.roles.cache.has("1099895227105427618") ||
+      interaction.member.permissions.has(PermissionFlagsBits.Administrator)
+    ) {
       let avatar = await client.users.fetch(interaction.customId.slice(1));
       const user = interaction.guild.members.cache.get(
         interaction.customId.slice(1)
@@ -113,8 +113,20 @@ async function interactionButton(interaction, client) {
         .setFooter({ text: `por ${interaction.user.username}` });
 
       interaction.update({ embeds: [embedUNMUTE], components: [] });
+    } else {
+      interaction.reply({
+        content: `🔒 SOLO UN <@&1099895227105427618> PUEDE REALIZAR ESTA ACCIÓN.`,
+        ephemeral: true,
+      });
     }
-    if (interaction.customId.charAt(0) === "b") {
+  }
+
+  //UNBAN - @MODERADORES
+  if (interaction.customId.charAt(0) === "b") {
+    if (
+      interaction.member.roles.cache.has("1099895227105427618") ||
+      interaction.member.permissions.has(PermissionFlagsBits.Administrator)
+    ) {
       try {
         await interaction.guild.members.unban(interaction.customId.slice(1));
       } catch {}
@@ -131,12 +143,12 @@ async function interactionButton(interaction, client) {
         .setColor("#57F287")
         .setFooter({ text: `por ${interaction.user.username}` });
       interaction.update({ embeds: [embedUNMUTE], components: [] });
+    } else {
+      interaction.reply({
+        content: `🔒 SOLO UN <@&1099895227105427618> PUEDE REALIZAR ESTA ACCIÓN.`,
+        ephemeral: true,
+      });
     }
-  } else {
-    interaction.reply({
-      content: `🔒 SOLO UN <@&1099895227105427618> PUEDE REALIZAR ESTA ACCIÓN.`,
-      ephemeral: true,
-    });
   }
 }
 
