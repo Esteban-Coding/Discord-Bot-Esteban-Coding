@@ -26,24 +26,24 @@ module.exports = {
       .setColor("#3498db")
       .addFields(
         { name: "COMANDOS", value: `\u200B` },
-        { name: "/MUTE", value: `Silencia a un usuario` },
-        { name: "/KICK", value: `Expulsa a un usuario` },
-        { name: "/BAN", value: `Banea a un usuario` },
+        { name: "🔇 ⋅ /MUTE", value: `Silencia a un usuario` },
+        { name: "🚷 ⋅ /KICK", value: `Expulsa a un usuario` },
+        { name: "🚷♾️ ⋅ /BAN", value: `Banea a un usuario` },
         {
-          name: "/CLEAR",
+          name: "🧹 ⋅ /CLEAR",
           value: `Eliminar cierta cantidad de mensajes de un canal o de un miembro (max 99 por comando)`,
         },
-        { name: "/LOCK", value: `Desactivar canal a los miembros` },
-        { name: "/UNLOCK", value: `Activar canal a los miembros` },
+        { name: "🔒⛔ ⋅ /LOCK", value: `Desactivar canal a los miembros` },
+        { name: "🔓✅ ⋅ /UNLOCK", value: `Activar canal a los miembros` },
         {
-          name: "/CLOSE_TICKET",
+          name: "✂️🎫 ⋅ /CLOSE_TICKET",
           value: `Acaba la conversación del ticket en el que se ejecuta el comando`,
         },
-        { name: "/POST", value: `Cuadro de contenido personalizado` },
-        { name: "/SAY", value: `Repite lo que escribas` },
-        { name: "/RULES", value: `Cartel con las reglas` }
+        { name: "📢 ⋅ /POST", value: `Cuadro de contenido personalizado` },
+        { name: "🤖💬 ⋅ /SAY", value: `Repite lo que escribas` },
+        { name: "📕 ⋅ /RULES", value: `Cartel con las reglas` }
       )
-      .setFooter({ text: "version 1" });
+      .setFooter({ text: "version 2" });
 
     const channel = client.channels.cache.get("1062826719721033869");
     channel.send({ embeds: [embedBAN] });

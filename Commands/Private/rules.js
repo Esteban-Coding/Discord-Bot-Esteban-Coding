@@ -16,29 +16,29 @@ module.exports = {
 
   execute(interaction, client) {
     const embed = new EmbedBuilder()
-      .setTitle("NORMAS")
+      .setTitle("NORMAS DE LA COMUNIDAD")
       .setURL("https://discord.com/guidelines")
-      .setThumbnail("https://cdn-icons-png.flaticon.com/512/760/760172.png")
+      .setThumbnail("https://static.vecteezy.com/system/resources/previews/024/405/940/original/isolated-tech-error-404-sign-icon-png.png")
       .setColor("ff0000")
       .addFields(
         {
-          name: "𝟙 ⋅ RESPETO A TODOS",
+          name: "𝟙 ⋅ RESPETO A TODOS.",
           value: "\u200b",
         },
         {
-          name: `𝟚 ⋅ NO SE PERMITE EL FLOOD Y EL SPAM`,
+          name: `𝟚 ⋅ NO SE PERMITE EL FLOOD Y EL SPAM.`,
           value: "\u200b",
         },
         {
-          name: `𝟛 ⋅ NO PROMOVER EL ODIO, LA VIOLENCIA O EL ACOSO`,
+          name: `𝟛 ⋅ NO PROMOVER EL ODIO, LA VIOLENCIA O EL ACOSO.`,
           value: "\u200b",
         },
         {
-          name: `𝟜 ⋅ NO SE PERMITE CONTENIDO DELICADO (+18/NSFW/GORE)`,
+          name: `𝟜 ⋅ NO SE PERMITE CONTENIDO DELICADO (+18/NSFW/GORE).`,
           value: "\u200b",
         },
         {
-          name: `𝟝 ⋅ NO SE PERMITE COMPARTIR INFORMACION PERSONAL O SENCIBLE DE LOS USUARIOS`,
+          name: `𝟝 ⋅ NO SE PERMITE COMPARTIR INFORMACION PERSONAL O SENCIBLE DE LOS USUARIOS.`,
           value: "\u200b",
         },
         {
@@ -48,7 +48,7 @@ module.exports = {
         {
           name: `\u200b`,
           value:
-            "Si necesitas ayuda, tienes alguna duda o sugerencia te invitamos a abrir un ticket en <#1064016002096042035>. Te invito a seguirme en mis redes sociales:",
+            "Si necesitas ayuda, tienes alguna duda o sugerencia te invitamos a abrir un ticket en <#1064016002096042035>. Te invito a seguirme para apoyarme en mis redes sociales:",
         }
       );
 
@@ -57,17 +57,17 @@ module.exports = {
         .setLabel("YOUTUBE")
         .setEmoji("<:sm_youtube:1083411748943581234>")
         .setStyle(ButtonStyle.Link)
-        .setURL("https://www.youtube.com/@esteban.coding"),
+        .setURL("https://www.youtube.com/@estebancoding"),
       new ButtonBuilder()
         .setLabel("INSTAGRAM")
         .setEmoji("<:sm_instagram:1083425605615362158>")
         .setStyle(ButtonStyle.Link)
-        .setURL("https://www.instagram.com/esteban.coding"),
+        .setURL("https://www.instagram.com/estebancoding"),
       new ButtonBuilder()
         .setLabel("TIKTOK")
         .setEmoji("<:sm_tiktok:1083425589685399582>")
         .setStyle(ButtonStyle.Link)
-        .setURL("https://www.tiktok.com/@esteban.coding"),
+        .setURL("https://www.tiktok.com/@estebancoding"),
       new ButtonBuilder()
         .setLabel("TWITCH")
         .setEmoji("<:sm_twitch:1083425564506988595>")
