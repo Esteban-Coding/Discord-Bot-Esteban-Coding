@@ -8,7 +8,7 @@ async function guildMemberAdd(client) {
   registerFont("./Resources/Milky-Honey.ttf", { family: "Milky Honey" });
 
   const background = await Canvas.loadImage(
-    "https://cdn.discordapp.com/attachments/1061773400336519179/1160802568902037534/Discord_Welcome_Banner.png"
+    "https://cdn.discordapp.com/attachments/1061773400336519179/1222038226966155315/welcome.jpg?ex=6614c2c9&is=66024dc9&hm=19b249751c7469e3104e3c952ddd84b9e6b9f5261aedbd8c0b6d50e1894df16e&"
   );
   ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
   ctx.textAlign = "center";
