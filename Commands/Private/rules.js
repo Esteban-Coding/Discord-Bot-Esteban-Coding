@@ -13,12 +13,12 @@ module.exports = {
     .setName("rules")
     .setDescription("📕 Cartel con las reglas (MOD)")
     .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
-
+  
   execute(interaction, client) {
     const embed = new EmbedBuilder()
       .setTitle("NORMAS DE LA COMUNIDAD")
       .setURL("https://discord.com/guidelines")
-      .setThumbnail("https://static.vecteezy.com/system/resources/previews/024/405/940/original/isolated-tech-error-404-sign-icon-png.png")
+      .setThumbnail("https://i.ibb.co/zX3Qpst/error-404.png")
       .setColor("ff0000")
       .addFields(
         {
